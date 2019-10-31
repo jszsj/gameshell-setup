@@ -19,6 +19,7 @@ git clone https://github.com/libretro/RetroArch.git retroarch
 
 printf "${GREEN}Installing Retroarch...${NC}\n"
 cd retroarch
+git checkout 1.8.0
 ./configure --disable-vulkan --disable-ffmpeg --enable-xmb --disable-materialui --disable-flac --disable-parport --disable-vulkan_display --disable-videocore --disable-videoprocessor --disable-v4l2 --enable-x11 --disable-wayland --disable-vg --disable-jack --disable-discord --disable-langextra --enable-mali_fbdev --enable-opengles --disable-opengl_core --disable-opengl1
 make && sudo make install
 
